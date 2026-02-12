@@ -2,61 +2,61 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100 pt-24 pb-12">
-      <div className="container grid md:grid-cols-4 gap-16 mb-20">
+    <footer className="bg-slate-950 text-white pt-24 pb-12">
+      <div className="max-w-[1600px] mx-auto px-8 grid md:grid-cols-4 gap-16 mb-20">
         <div>
-          <Link href="/" className="text-2xl font-black tracking-tighter text-red-600 flex items-center gap-2 mb-8">
-            <div className="w-8 h-8 bg-red-600 rounded-sm flex items-center justify-center text-white font-black text-xl">A</div>
-            ALARP
+          <Link href="/" className="flex flex-col mb-8 leading-none">
+            <span className="text-[#E30613] font-black text-2xl tracking-tighter">ALARP</span>
+            <span className="text-white font-bold text-[10px] tracking-[0.2em] uppercase">Safety Partners</span>
           </Link>
-          <p className="text-sm text-gray-500 leading-relaxed font-semibold mb-8">
+          <p className="text-sm text-slate-400 leading-relaxed font-medium mb-8">
             Providing expert WHS and risk-mitigation advice 24/7. Part of the Global Safety Partners Group, dedicated to protecting high-stakes operations.
           </p>
           <div className="flex gap-4">
-             {['twitter', 'linkedin', 'instagram', 'facebook'].map(social => (
-                <div key={social} className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition-all cursor-pointer">
-                   <span className="text-[10px] transform -rotate-45">➤</span>
+             {['twitter', 'linkedin', 'facebook'].map(social => (
+                <div key={social} className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white/40 hover:bg-[#E30613] hover:text-white transition-all cursor-pointer">
+                   <span className="text-[10px] uppercase font-bold tracking-widest">{social[0]}</span>
                 </div>
-             ))}
+              ))}
           </div>
         </div>
         
         <div>
-          <h4 className="font-bold text-gray-900 mb-8 uppercase tracking-widest text-xs">Services</h4>
-          <ul className="space-y-4 text-sm font-semibold text-gray-600">
-            <li><Link href="/services" className="hover:text-red-600 transition-colors">Health and Safety</Link></li>
-            <li><Link href="/services" className="hover:text-red-600 transition-colors">HR and Employment Law</Link></li>
-            <li><Link href="/expertise" className="hover:text-red-600 transition-colors">Risk Management</Link></li>
-            <li><Link href="/expertise" className="hover:text-red-600 transition-colors">EAP and Wellbeing</Link></li>
+          <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Navigation</h4>
+          <ul className="space-y-4 text-sm font-medium text-slate-400">
+            <li><Link href="/" className="hover:text-[#E30613] transition-colors">Home</Link></li>
+            <li><Link href="/about" className="hover:text-[#E30613] transition-colors">About Us</Link></li>
+            <li><Link href="/services" className="hover:text-[#E30613] transition-colors">Technical Services</Link></li>
+            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">High-Risk Expertise</Link></li>
+            <li><Link href="/contact" className="hover:text-[#E30613] transition-colors">Contact</Link></li>
           </ul>
         </div>
 
         <div>
-           <h4 className="font-bold text-gray-900 mb-8 uppercase tracking-widest text-xs">Resources</h4>
-           <ul className="space-y-4 text-sm font-semibold text-gray-600">
-            <li><Link href="/about" className="hover:text-red-600 transition-colors">About ALARP</Link></li>
-            <li><Link href="/about" className="hover:text-red-600 transition-colors">Our Heritage</Link></li>
-            <li><Link href="/services" className="hover:text-red-600 transition-colors">Case Studies</Link></li>
-            <li><Link href="/contact" className="hover:text-red-600 transition-colors">Technical Blog</Link></li>
+           <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Expertise</h4>
+           <ul className="space-y-4 text-sm font-medium text-slate-400">
+            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Systems & Compliance</Link></li>
+            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Major Hazard Facilities</Link></li>
+            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Logistics Safety</Link></li>
+            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Permit Systems</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-bold text-gray-900 mb-8 uppercase tracking-widest text-xs">Contact Us</h4>
-          <p className="text-sm font-bold text-gray-900 mb-2">Technical Helpline</p>
-          <p className="text-2xl font-black text-red-600 mb-6 transition-transform hover:scale-105 cursor-pointer w-fit">1300 761 935</p>
-          <Link href="/contact" className="bg-gray-900 text-white px-8 py-3 rounded-full font-bold text-sm hover:bg-red-600 transition-all text-center block">
-             Book Consultation
+          <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Contact Us</h4>
+          <p className="text-sm font-bold text-slate-400 mb-2">Technical Helpline</p>
+          <p className="text-2xl font-black text-[#E30613] mb-6 transition-transform hover:scale-105 cursor-pointer w-fit underline decoration-2 underline-offset-8">1300 761 935</p>
+          <Link href="/contact" className="bg-[#E30613] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-white hover:text-slate-900 transition-all text-center block shadow-lg shadow-red-600/10">
+             Book a Consultation
           </Link>
         </div>
       </div>
       
-      <div className="container pt-12 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-semibold text-gray-400">
-        <p>&copy; {new Date().getFullYear()} ALARP SAFETY PARTNERS. Part of Global Safety Partners.</p>
+      <div className="max-w-[1600px] mx-auto px-8 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+        <p>&copy; {new Date().getFullYear()} ALARP SAFETY PARTNERS. National Technical Advisory.</p>
         <div className="flex gap-10">
-          <Link href="#" className="hover:text-red-600 transition-colors">Privacy Policy</Link>
-          <Link href="#" className="hover:text-red-600 transition-colors">Terms of Use</Link>
-          <Link href="#" className="hover:text-red-600 transition-colors">Cookie Policy</Link>
+          <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link href="#" className="hover:text-white transition-colors">Terms of Use</Link>
         </div>
       </div>
     </footer>

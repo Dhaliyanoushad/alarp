@@ -1,0 +1,61 @@
+import { ShieldCheck, HardHat, FileText } from 'lucide-react';
+import Link from 'next/link';
+
+export default function ServicesGrid() {
+  const services = [
+    {
+      title: "Systems & Compliance",
+      icon: <ShieldCheck className="w-10 h-10 text-[#E30613]" />,
+      items: ["HSEMS Implementation", "Legal Compliance", "Procedure Reviews"]
+    },
+    {
+      title: "Onsite Operations",
+      icon: <HardHat className="w-10 h-10 text-[#E30613]" />,
+      items: ["Workplace Inspections", "Contractor Management", "Incident Investigation"]
+    },
+    {
+      title: "Documentation & Training",
+      icon: <FileText className="w-10 h-10 text-[#E30613]" />,
+      items: ["Staff Inductions & Training", "SWI Development", "Toolbox Talks"]
+    }
+  ];
+
+  return (
+    <section className="bg-white py-24">
+      <div className="max-w-[1600px] mx-auto px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Core Services</h2>
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            Comprehensive HSE solutions tailored for high-risk industrial environments.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div 
+              key={index} 
+              className="bg-slate-50 p-10 rounded-2xl border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+            >
+              <div className="mb-6">{service.icon}</div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">{service.title}</h3>
+              <ul className="space-y-4 mb-8">
+                {service.items.map((item, i) => (
+                  <li key={i} className="flex gap-3 text-slate-700 font-medium">
+                    <span className="text-[#E30613]">•</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link 
+                href="/services" 
+                className="inline-block text-[#E30613] font-bold text-sm uppercase tracking-wider hover:underline"
+              >
+                Learn More →
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
