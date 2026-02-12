@@ -1,94 +1,72 @@
 import Link from 'next/link';
-
-const ChevronDown = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="m6 9 6 6 6-6"/>
-  </svg>
-);
-
-const PhoneIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-  </svg>
-);
-
-const MenuIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="4" x2="20" y1="12" y2="12"/>
-    <line x1="4" x2="20" y1="6" y2="6"/>
-    <line x1="4" x2="20" y1="18" y2="18"/>
-  </svg>
-);
+import { ChevronDown, Phone, Menu } from 'lucide-react';
 
 export default function Navbar() {
+  const navyColor = "text-[#002D4B]";
+  const redColor = "text-[#E30613]";
+
   return (
-    <nav className="fixed w-full z-50 bg-white border-b border-gray-100 font-sans">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-[88px] flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <svg 
-            width="32" 
-            height="44" 
-            viewBox="0 0 32 44" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-[#E30613]"
-          >
-            <path 
-              d="M31.2 13.2C31.2 20.4 25.2 26.4 18 26.4H12V44H0V0H18C25.2 0 31.2 6 31.2 13.2ZM12 15.2H18C19.1 15.2 20 14.3 20 13.2C20 12.1 19.1 11.2 18 11.2H12V15.2Z" 
-              fill="currentColor"
-            />
-          </svg>
-          <span className="text-[#E30613] font-bold text-lg tracking-wider">PENINSULA</span>
-        </Link>
+    <nav className="fixed w-full z-50 bg-white border-b border-gray-100 font-sans px-auto">
+      {/* Container with horizontal padding to prevent screen-touching */}
+      <div className="max-w-[1600px] mx-auto px-8 h-24 flex items-center justify-between">
         
-        {/* Navigation Links */}
-        <div className="hidden lg:flex items-center gap-10">
-          <div className="flex items-center gap-1 cursor-pointer group">
-            <span className="text-[15px] font-semibold text-[#1a1a1a] hover:text-[#E30613] transition-colors">HR</span>
-            <div className="text-gray-400 group-hover:text-[#E30613]">
-              <ChevronDown />
-            </div>
-          </div>
-          <div className="flex items-center gap-1 cursor-pointer group">
-            <span className="text-[15px] font-semibold text-[#1a1a1a] hover:text-[#E30613] transition-colors">Health & Safety</span>
-            <div className="text-gray-400 group-hover:text-[#E30613]">
-              <ChevronDown />
-            </div>
-          </div>
-          <Link href="/services" className="text-[15px] font-semibold text-[#1a1a1a] hover:text-[#E30613] transition-colors">
-            Employment Law
-          </Link>
-          <Link href="/expertise" className="text-[15px] font-semibold text-[#1a1a1a] hover:text-[#E30613] transition-colors">
-            Events
-          </Link>
-          <Link href="/services" className="text-[15px] font-semibold text-[#1a1a1a] hover:text-[#E30613] transition-colors">
-            Pricing
-          </Link>
+        {/* 1. Left Section: Logo */}
+        <Link href="/" className="flex items-center gap-3 shrink-0">
+          {/* <svg width="32" height="40" viewBox="0 0 32 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#E30613]">
+            <path d="M10.5 0C4.7 0 0 4.7 0 10.5V40H6V10.5C6 8 8 6 10.5 6H16C21.8 6 26.5 10.7 26.5 16.5C26.5 22.3 21.8 27 16 27H6V33H16C25.1 33 32.5 25.6 32.5 16.5C32.5 7.4 25.1 0 16 0H10.5Z" fill="currentColor"/>
+          </svg> */}
+          <span className={`${redColor} font-bold text-lg tracking-wider`}>PENINSULA</span>
+        </Link>
+
+        {/* 2. Middle Section: Navigation Links */}
+        <div className="hidden lg:flex items-center gap-8">
+          <NavItem label="HR" hasDropdown navyColor={navyColor} />
+          <NavItem label="Health & Safety" hasDropdown navyColor={navyColor} />
+          <NavItem label="Employment Law" navyColor={navyColor} />
+          <NavItem label="Events" navyColor={navyColor} />
+          <NavItem label="Pricing" navyColor={navyColor} />
         </div>
 
-        {/* Action Area */}
-        <div className="flex items-center gap-8">
+        {/* 3. Right Section: Actions */}
+        <div className="flex items-center gap-6">
           <Link 
             href="tel:1300761935" 
-            className="flex items-center gap-3 text-[15px] font-bold text-[#1a1a1a] hover:text-[#E30613] transition-colors group"
+            className={`flex items-center gap-2 font-bold ${navyColor} hover:text-[#E30613] transition-colors`}
           >
-            <div className="text-[#E30613]">
-              <PhoneIcon />
-            </div>
+            <Phone size={18} className="text-[#E30613]" fill="currentColor" />
             <span>Contact Us</span>
           </Link>
-          
+
+          {/* Vertical Divider */}
           <div className="h-10 w-[1px] bg-gray-200 hidden md:block" />
 
-          <button className="flex items-center gap-2 group cursor-pointer border-none bg-transparent">
-            <span className="text-[15px] font-semibold text-[#1a1a1a] group-hover:text-[#E30613] transition-colors">Menu</span>
-            <div className="text-[#1a1a1a] group-hover:text-[#E30613]">
-              <MenuIcon />
-            </div>
+          {/* Boxed Menu Button */}
+          <button className={`flex items-center gap-3 border-[1.5px] border-black px-5 py-2 rounded-md font-bold ${navyColor} hover:bg-gray-50 transition-all`}>
+            <span>Menu</span>
+            <Menu size={20} />
           </button>
         </div>
       </div>
     </nav>
+  );
+}
+
+interface NavItemProps {
+  label: string;
+  hasDropdown?: boolean;
+  navyColor: string;
+}
+
+// Sub-component for cleaner code
+function NavItem({ label, hasDropdown, navyColor }: NavItemProps) {
+  return (
+    <div className={`flex items-center gap-1 cursor-pointer group`}>
+      <span className={`text-[15px] font-bold ${navyColor} group-hover:text-[#E30613] transition-colors`}>
+        {label}
+      </span>
+      {hasDropdown && (
+        <ChevronDown size={14} className="text-gray-400 group-hover:text-[#E30613] transition-colors" />
+      )}
+    </div>
   );
 }
