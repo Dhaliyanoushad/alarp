@@ -1,52 +1,10 @@
 import Link from 'next/link';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
     <div className="flex flex-col w-full">
-      {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center bg-white overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/40" />
-        </div>
-        
-        <div className="container relative z-10 text-white">
-          <div className="max-w-3xl">
-            <h1 className="text-6xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
-              ALARP Health <br /> Safety and <br /> Risk Management
-            </h1>
-            <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-2xl font-semibold opacity-90">
-              Providing expert WHS and risk-mitigation advice 24/7. Part of the Global Safety Partners Group, dedicated to protecting high-stakes operations.
-            </p>
-            
-            {/* Trustpilot Placeholder */}
-            <div className="flex items-center gap-4 mb-12 bg-white/10 backdrop-blur-md p-4 rounded-lg w-fit">
-              <span className="text-sm font-bold uppercase tracking-widest">Excellent</span>
-              <div className="flex gap-1">
-                {[1,2,3,4,5].map(i => (
-                  <div key={i} className="w-5 h-5 bg-green-500 flex items-center justify-center text-white text-[10px] rounded-sm">★</div>
-                ))}
-              </div>
-              <span className="text-xs font-semibold opacity-80">4.9 out of 5 based on 1,500+ reviews</span>
-              <span className="text-[10px] font-black tracking-tighter opacity-100">Trustpilot</span>
-            </div>
-
-            <div className="flex flex-wrap gap-5">
-              <Link 
-                href="/contact" 
-                className="bg-red-600 hover:bg-red-700 text-white px-10 py-5 rounded-full font-bold transition-all shadow-xl text-lg"
-              >
-                Call now 1300 761 935
-              </Link>
-              <Link 
-                href="/contact" 
-                className="bg-white/10 border-2 border-white hover:bg-white hover:text-black text-white px-10 py-5 rounded-full font-bold transition-all text-lg backdrop-blur-sm"
-              >
-                Enquire Now
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Support Section */}
       <section className="bg-white py-32 overflow-hidden">
