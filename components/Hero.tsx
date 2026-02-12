@@ -16,27 +16,27 @@ export default function Hero() {
       <div className="relative z-10 max-w-[1600px] mx-auto px-8 w-full">
         <div className="max-w-3xl">
           <h1 className="text-white text-5xl md:text-7xl font-bold leading-[1.1] mb-8">
-            Peninsula HR and <br />
-            Work Health & Safety
+            ALARP Safety <br />
+            Partners
           </h1>
           
           <p className="text-white text-xl md:text-2xl font-medium leading-relaxed mb-12 opacity-95">
-            Part of the Award-winning Peninsula Group, <br className="hidden md:block" />
-            providing expert HR and WHS advice 24/7
+            Professional HSE consultancy delivering compliance, <br className="hidden md:block" />
+            risk management, and high-risk safety solutions
           </p>
 
           <div className="flex flex-wrap gap-5">
             <Link 
-              href="tel:1300761935"
+              href="#contact"
               className="bg-[#E30613] hover:bg-[#c40510] text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center gap-2"
             >
-              Call now 1300 761 935
+              Book a Consultation
             </Link>
             
             <button 
               className="border-2 border-white/60 hover:border-white text-white px-10 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm"
             >
-              Enquire Now
+              Request a Safety Audit
             </button>
           </div>
         </div>
