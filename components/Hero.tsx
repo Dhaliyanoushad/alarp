@@ -6,10 +6,10 @@ export default function Hero() {
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <div 
-          className="absolute inset-0 bg-[url('https://i.pinimg.com/736x/43/f3/c8/43f3c87cfc2bdfd0b8579babffe4e811.jpg')] bg-cover bg-center" 
+          className="absolute inset-0 bg-[url('/image/safety.png')] bg-cover bg-center" 
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Hero Content */}
