@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white p-8 md:p-12 rounded-2xl shadow-2xl border border-slate-100">
+    <div className="bg-white p-6 md:p-12 rounded-2xl shadow-2xl border border-slate-100">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-2">
@@ -95,7 +95,7 @@ export default function ContactForm() {
 
         <button 
           type="submit"
-          className="w-full bg-[#E30613] hover:bg-[#c40510] text-white font-bold py-5 rounded-lg text-lg transition-all shadow-xl shadow-red-600/20 uppercase tracking-widest"
+          className="w-full bg-[#E30613] hover:bg-[#c40510] text-white font-bold py-4 md:py-5 rounded-lg text-base md:text-lg transition-all shadow-xl shadow-red-600/20 uppercase tracking-widest"
         >
           Send Inquiry
         </button>
