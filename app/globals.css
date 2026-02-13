@@ -39,7 +39,14 @@
   transform: rotate(-0.5deg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-bg);
   color: var(--text-main);
   line-height: 1.6;
