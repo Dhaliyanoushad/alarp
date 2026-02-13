@@ -83,7 +83,7 @@ export default function Navbar() {
           isOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8 px-8">
+        <div className="flex flex-col items-center justify-start h-full gap-8 px-8 pt-24 pb-12 overflow-y-auto w-full">
           {navLinks.map((link) => (
             <Link 
               key={link.label}
