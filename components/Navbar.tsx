@@ -83,7 +83,7 @@ export default function Navbar() {
           isOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'
         }`}
       >
-        <div className="flex flex-col items-center justify-start h-full gap-8 px-8 pt-24 pb-12 overflow-y-auto w-full">
+        <div className="flex flex-col items-center justify-start h-full gap-5 px-8 pt-36 pb-12 overflow-y-auto w-full">
           {navLinks.map((link) => (
             <Link 
               key={link.label}
@@ -95,7 +95,7 @@ export default function Navbar() {
             </Link>
           ))}
           
-          <div className="w-full max-w-xs h-[1px] bg-gray-100 my-4" />
+          <div className="w-full max-w-xs h-[1px] bg-gray-100 my-1" />
           
           <Link 
             href="tel:1300761935" 
