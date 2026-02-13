@@ -35,7 +35,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen bg-slate-50">
+    <div className="pt-24 min-h-screen bg-slate-50">
       {/* Header */}
       <AnimatedSection>
         <section className="bg-white py-32 border-b border-slate-100">
@@ -81,6 +81,6 @@ export default function ServicesPage() {
       <AnimatedSection>
         <CTASection theme="light" title="Secure Your Operations Today." />
       </AnimatedSection>
-    </main>
+    </div>
   );
 }

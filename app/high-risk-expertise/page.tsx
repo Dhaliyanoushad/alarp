@@ -11,7 +11,7 @@ export default function HighRiskExpertisePage() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen bg-white">
+    <div className="pt-24 min-h-screen bg-white">
       {/* Header */}
       <AnimatedSection>
         <section className="bg-slate-900 py-32 text-center relative overflow-hidden">
@@ -69,6 +69,6 @@ export default function HighRiskExpertisePage() {
       <AnimatedSection>
         <CTASection theme="dark" title="Don't Leave Your High-Risk Operations to Chance." />
       </AnimatedSection>
-    </main>
+    </div>
   );
 }

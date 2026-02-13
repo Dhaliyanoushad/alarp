@@ -5,7 +5,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function ContactPage() {
   return (
-    <main className="pt-24 min-h-screen bg-[#F0F5FA]">
+    <div className="pt-24 min-h-screen bg-[#F0F5FA]">
       <section className="py-24">
         <div className="max-w-[1600px] mx-auto px-8">
           <div className="flex flex-col lg:flex-row gap-24">
@@ -83,6 +83,6 @@ export default function ContactPage() {
           </div>
         </section>
       </AnimatedSection>
-    </main>
+    </div>
   );
 }

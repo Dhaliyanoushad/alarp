@@ -33,9 +33,9 @@ export default function RootLayout({
         className={`${inter.variable} ${roboto.variable} antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
-        <main className="flex-grow overflow-x-hidden">
+        <div className="flex-grow">
           {children}
-        </main>
+        </div>
         <Footer />
       </body>
     </html>

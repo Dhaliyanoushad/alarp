@@ -11,7 +11,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="pt-24 min-h-screen bg-white">
+    <div className="pt-24 min-h-screen bg-white">
       {/* Header */}
       <AnimatedSection>
         <section className="bg-slate-900 py-32 text-center relative overflow-hidden">
@@ -79,6 +79,6 @@ export default function AboutPage() {
       <AnimatedSection>
         <CTASection theme="dark" title="Partner with the Experts in Professional Safety." />
       </AnimatedSection>
-    </main>
+    </div>
   );
 }

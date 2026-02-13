@@ -24,7 +24,6 @@ export default function AnimatedSection({
         ease: [0.21, 0.47, 0.32, 0.98], // Custom ease-out
         delay 
       }}
-      style={{ willChange: "transform, opacity" }}
       className={className}
     >
       {children}
