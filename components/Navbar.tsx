@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Phone, Menu, X } from 'lucide-react';
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const navyColor = "text-[#002D4B]";
   const redColor = "text-[#E30613]";
@@ -36,7 +38,7 @@ export default function Navbar() {
               <Link 
                 key={link.label}
                 href={link.href}
-                className={`text-[15px] font-bold ${navyColor} hover:text-[#E30613] transition-colors`}
+                className={`text-[15px] font-bold ${pathname === link.href ? 'text-[#E30613]' : navyColor} hover:text-[#E30613] transition-colors`}
               >
                 {link.label}
               </Link>
@@ -86,7 +88,7 @@ export default function Navbar() {
             <Link 
               key={link.label}
               href={link.href}
-              className={`text-2xl font-bold ${navyColor} hover:text-[#E30613] transition-colors`}
+              className={`text-2xl font-bold ${pathname === link.href ? 'text-[#E30613]' : navyColor} hover:text-[#E30613] transition-colors`}
               onClick={() => setIsOpen(false)}
             >
               {link.label}
