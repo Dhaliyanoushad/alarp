@@ -27,17 +27,18 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-5">
             <Link 
-              href="#contact"
+              href="/contact"
               className="bg-[#E30613] hover:bg-[#c40510] text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center gap-2"
             >
               Book a Consultation
             </Link>
             
-            <button 
+            <Link 
+              href="/contact"
               className="border-2 border-white/60 hover:border-white text-white px-10 py-4 rounded-full font-bold text-lg transition-all backdrop-blur-sm"
             >
               Request a Safety Audit
-            </button>
+            </Link>
           </div>
         </div>
       </div>
