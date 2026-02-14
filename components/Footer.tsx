@@ -1,11 +1,26 @@
+"use client";
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  const handleLinkClick = (href: string) => {
+    if (pathname === href) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-slate-950 text-white pt-24 pb-12">
       <div className="max-w-[1600px] mx-auto px-8 grid md:grid-cols-4 gap-16 mb-20">
         <div>
-          <Link href="/" className="flex flex-col mb-8 leading-none">
+          <Link 
+            href="/" 
+            className="flex flex-col mb-8 leading-none"
+            onClick={() => handleLinkClick('/')}
+          >
             <span className="text-[#E30613] font-black text-2xl tracking-tighter">ALARP</span>
             <span className="text-white font-bold text-[10px] tracking-[0.2em] uppercase">Safety Partners</span>
           </Link>
@@ -24,21 +39,21 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Navigation</h4>
           <ul className="space-y-4 text-sm font-medium text-slate-400">
-            <li><Link href="/" className="hover:text-[#E30613] transition-colors">Home</Link></li>
-            <li><Link href="/about" className="hover:text-[#E30613] transition-colors">About Us</Link></li>
-            <li><Link href="/services" className="hover:text-[#E30613] transition-colors">Technical Services</Link></li>
-            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">High-Risk Expertise</Link></li>
-            <li><Link href="/contact" className="hover:text-[#E30613] transition-colors">Contact</Link></li>
+            <li><Link href="/" onClick={() => handleLinkClick('/')} className="hover:text-[#E30613] transition-colors">Home</Link></li>
+            <li><Link href="/about" onClick={() => handleLinkClick('/about')} className="hover:text-[#E30613] transition-colors">About Us</Link></li>
+            <li><Link href="/services" onClick={() => handleLinkClick('/services')} className="hover:text-[#E30613] transition-colors">Technical Services</Link></li>
+            <li><Link href="/high-risk-expertise" onClick={() => handleLinkClick('/high-risk-expertise')} className="hover:text-[#E30613] transition-colors">High-Risk Expertise</Link></li>
+            <li><Link href="/contact" onClick={() => handleLinkClick('/contact')} className="hover:text-[#E30613] transition-colors">Contact</Link></li>
           </ul>
         </div>
 
         <div>
            <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Expertise</h4>
            <ul className="space-y-4 text-sm font-medium text-slate-400">
-            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Systems & Compliance</Link></li>
-            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Major Hazard Facilities</Link></li>
-            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Logistics Safety</Link></li>
-            <li><Link href="/high-risk-expertise" className="hover:text-[#E30613] transition-colors">Permit Systems</Link></li>
+            <li><Link href="/high-risk-expertise" onClick={() => handleLinkClick('/high-risk-expertise')} className="hover:text-[#E30613] transition-colors">Systems & Compliance</Link></li>
+            <li><Link href="/high-risk-expertise" onClick={() => handleLinkClick('/high-risk-expertise')} className="hover:text-[#E30613] transition-colors">Major Hazard Facilities</Link></li>
+            <li><Link href="/high-risk-expertise" onClick={() => handleLinkClick('/high-risk-expertise')} className="hover:text-[#E30613] transition-colors">Logistics Safety</Link></li>
+            <li><Link href="/high-risk-expertise" onClick={() => handleLinkClick('/high-risk-expertise')} className="hover:text-[#E30613] transition-colors">Permit Systems</Link></li>
           </ul>
         </div>
 
@@ -46,7 +61,7 @@ export default function Footer() {
           <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Contact Us</h4>
           <p className="text-sm font-bold text-slate-400 mb-2">Technical Helpline</p>
           <p className="text-2xl font-black text-[#E30613] mb-6 transition-transform hover:scale-105 cursor-pointer w-fit underline decoration-2 underline-offset-8">1300 761 935</p>
-          <Link href="/contact" className="bg-[#E30613] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-white hover:text-slate-900 transition-all text-center block shadow-lg shadow-red-600/10">
+          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="bg-[#E30613] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-white hover:text-slate-900 transition-all text-center block shadow-lg shadow-red-600/10">
              Book a Consultation
           </Link>
         </div>
