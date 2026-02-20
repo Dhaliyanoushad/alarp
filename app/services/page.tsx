@@ -42,7 +42,7 @@ export default function ServicesPage() {
           <div className="max-w-[1600px] mx-auto px-8">
             <h1 className="text-slate-900 text-5xl md:text-7xl font-black mb-8">Technical Services</h1>
             <p className="text-slate-600 text-xl font-medium max-w-3xl leading-relaxed">
-              Professional safety advisory designed for high-stakes industries. We don't just find problems—we deliver technical, defensible solutions.
+              Professional safety advisory tailored for high-risk industries, focused on identifying issues and providing practical, technically sound solutions you can rely on.
             </p>
           </div>
         </section>
