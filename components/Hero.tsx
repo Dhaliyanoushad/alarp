@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-[1600px] mx-auto px-8 w-full">
         <div className="max-w-3xl">
           <h1 className="text-white text-5xl md:text-7xl font-bold leading-[1.1] mb-8">
-            ALARP Safety <br />
+            SFAIRP Safety <br />
             Partners
           </h1>
           

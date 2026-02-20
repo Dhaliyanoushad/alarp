@@ -25,7 +25,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us 24/7</p>
-                      <p className="text-lg md:text-xl font-bold text-slate-900">1300 761 935</p>
+                      <p className="text-lg md:text-xl font-bold text-slate-900">0449 853 255</p>
                     </div>
                   </div>
 
@@ -35,7 +35,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email Inquiry</p>
-                      <p className="text-lg md:text-xl font-bold text-slate-900">advisory@alarpsafety.com.au</p>
+                      <p className="text-lg md:text-xl font-bold text-slate-900">support@sfairpsafetypartners.com</p>
                     </div>
                   </div>
 
@@ -44,7 +44,7 @@ export default function ContactPage() {
                       <MapPin size={24} />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">National Headquarters</p>
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Location</p>
                       <p className="text-lg md:text-xl font-bold text-slate-900">Sydney / Melbourne / Brisbane</p>
                     </div>
                   </div>

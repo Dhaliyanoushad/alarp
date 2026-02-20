@@ -14,14 +14,14 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-950 text-white pt-24 pb-12">
-      <div className="max-w-[1600px] mx-auto px-8 grid md:grid-cols-4 gap-16 mb-20">
+      <div className="max-w-[1600px] mx-auto px-8 grid sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16 lg:gap-16 mb-20">
         <div>
           <Link 
             href="/" 
             className="flex flex-col mb-8 leading-none"
             onClick={() => handleLinkClick('/')}
           >
-            <span className="text-[#E30613] font-black text-2xl tracking-tighter">ALARP</span>
+            <span className="text-[#E30613] font-black text-2xl tracking-tighter">SFAIRP</span>
             <span className="text-white font-bold text-[10px] tracking-[0.2em] uppercase">Safety Partners</span>
           </Link>
           <p className="text-sm text-slate-400 leading-relaxed font-medium mb-8">
@@ -60,19 +60,19 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Contact Us</h4>
           <p className="text-sm font-bold text-slate-400 mb-2">Technical Helpline</p>
-          <p className="text-2xl font-black text-[#E30613] mb-6 transition-transform hover:scale-105 cursor-pointer w-fit underline decoration-2 underline-offset-8">1300 761 935</p>
-          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="bg-[#E30613] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-white hover:text-slate-900 transition-all text-center block shadow-lg shadow-red-600/10">
+          <p className="text-2xl md:text-xl lg:text-2xl font-black text-[#E30613] mb-6 transition-transform hover:scale-105 cursor-pointer w-fit underline decoration-2 underline-offset-8">0449 853 255</p>
+          <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="bg-[#E30613] text-white px-8 md:px-6 lg:px-8 py-4 md:py-3 lg:py-4 rounded-full font-bold text-sm md:text-xs lg:text-sm hover:bg-white hover:text-slate-900 transition-all text-center block md:inline-block lg:block shadow-lg shadow-red-600/10">
              Book a Consultation
           </Link>
         </div>
       </div>
       
-      <div className="max-w-[1600px] mx-auto px-8 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-        <p>&copy; {new Date().getFullYear()} ALARP SAFETY PARTNERS. National Technical Advisory.</p>
-        <div className="flex gap-10">
+      <div className="max-w-[1600px] mx-auto px-8 pt-12 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+        <p>&copy; {new Date().getFullYear()} SFAIRP SAFETY PARTNERS. National Technical Advisory.</p>
+        {/* <div className="flex gap-10">
           <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
           <Link href="#" className="hover:text-white transition-colors">Terms of Use</Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

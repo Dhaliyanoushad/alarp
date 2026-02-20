@@ -20,7 +20,7 @@ export default function SupportSection() {
           {/* Right: Content */}
           <div className="lg:w-1/2">
             <h2 className="text-4xl md:text-5xl font-bold text-[#002D4B] leading-tight mb-8">
-              How ALARP <span className="relative inline-block">
+              How SFAIRP <span className="relative inline-block">
                 supports your
                 <svg className="absolute -bottom-2 left-0 w-full h-2" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#E30613" strokeWidth="3" fill="transparent" />
@@ -65,7 +65,7 @@ export default function SupportSection() {
                 className="bg-[#3D5ADA] hover:bg-[#2F47B8] text-white px-8 py-3.5 rounded-full font-bold text-center flex flex-col justify-center min-w-[220px] transition-colors"
               >
                 <span className="text-xs opacity-90 mb-0.5 uppercase tracking-wider">Call now</span>
-                <span className="text-lg leading-none">1300 761 935</span>
+                <span className="text-lg leading-none">0449 853 255</span>
               </Link>
               
               <button 

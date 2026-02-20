@@ -15,7 +15,7 @@ export default function Expertise() {
     },
     {
       title: "Major Hazard Facilities",
-      desc: "Specialized risk assessment for gas, chemical, and industrial processing sites. We implement the ALARP principle to ensure process safety and emergency response readiness.",
+      desc: "Specialized risk assessment for gas, chemical, and industrial processing sites. We implement the SFAIRP principle to ensure process safety and emergency response readiness.",
       highlight: "Core Priority: Process Safety Management"
     }
   ];
@@ -29,7 +29,7 @@ export default function Expertise() {
                High-Risk <span className="peninsula-underline">Expertise</span>
             </h1>
             <p className="max-w-3xl text-xl leading-relaxed font-semibold text-gray-700">
-              Where the stakes are highest, ALARP Safety Partners provides the authoritative technical oversight required to protect life and asset.
+              Where the stakes are highest, SFAIRP Safety Partners provides the authoritative technical oversight required to protect life and asset.
             </p>
           </AnimatedSection>
         </div>
@@ -59,7 +59,7 @@ export default function Expertise() {
               <div>
                 <h4 className="text-red-600 font-bold uppercase tracking-widest text-xs mb-6">Technical Advisory</h4>
                 <h2 className="text-4xl font-black mb-10 leading-tight">
-                  "ALARP is the preferred provider for our high-hazard processing sites. Their <span className="peninsula-underline">technical mastery</span> is unmatched."
+                  "SFAIRP is the preferred provider for our high-hazard processing sites. Their <span className="peninsula-underline">technical mastery</span> is unmatched."
                 </h2>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-0.5 bg-gray-900" />

@@ -17,9 +17,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "ALARP SAFETY PARTNERS | Industrial Safety Consultancy",
+  title: "SFAIRP SAFETY PARTNERS | Industrial Safety Consultancy",
   description: "High-trust safety audits, systems, and training for construction, warehousing, and major hazard facilities. Establising authoritative safety cultures.",
-  keywords: ["safety consultancy", "HSE management", "safety audit", "industrial safety", "ALARP", "workplace safety"],
+  keywords: ["safety consultancy", "HSE management", "safety audit", "industrial safety", "SFAIRP", "workplace safety"],
 };
 
 export default function RootLayout({

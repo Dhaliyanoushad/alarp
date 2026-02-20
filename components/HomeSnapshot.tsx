@@ -18,7 +18,7 @@ export default function HomeSnapshot() {
             <div className="relative bg-white p-3 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-transform duration-500 group-hover:scale-[1.01]">
               <img 
                 src="https://i.pinimg.com/736x/84/66/57/8466576e9f04f0a5a3c451bd70fe6f8c.jpg" 
-                alt="ALARP SAFETY PARTNERS Onsite"
+                alt="SFAIRP SAFETY PARTNERS Onsite"
                 className="w-full h-auto rounded-sm"
               />
             </div>
@@ -45,7 +45,7 @@ export default function HomeSnapshot() {
 
             <div className="space-y-6 text-slate-700 text-lg leading-relaxed mb-10">
               <p className="font-semibold text-slate-900">
-                ALARP SAFETY PARTNERS is a professional safety consultancy delivering practical, compliant, and high-impact HSE solutions.
+                SFAIRP SAFETY PARTNERS is a professional safety consultancy delivering practical, compliant, and high-impact HSE solutions.
               </p>
               <p>
                 We specialize in protecting high-stakes operations across construction, warehousing, logistics, and major hazard facilities. Our mission is to ensure your business remains compliant and your people stay safe.

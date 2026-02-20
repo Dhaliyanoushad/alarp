@@ -34,7 +34,7 @@ export default function AboutPage() {
                 <h2 className="text-4xl font-bold text-slate-900 mb-8">Defensible Compliance. <br /><span className="text-[#E30613]">No Compromises.</span></h2>
                 <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
                   <p>
-                    ALARP SAFETY PARTNERS was founded to bridge the gap between complex safety regulations and practical onsite operations. We believe that safety shouldn't be a hurdle to productivity, but its backbone.
+                    SFAIRP SAFETY PARTNERS was founded to bridge the gap between complex safety regulations and practical onsite operations. We believe that safety shouldn't be a hurdle to productivity, but its backbone.
                   </p>
                   <p>
                     Our mission is to establish a high-trust, authoritative partnership with every client, ensuring they are not just compliant, but leaders in operational safety.

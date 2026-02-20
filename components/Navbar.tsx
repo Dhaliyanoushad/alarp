@@ -27,7 +27,7 @@ export default function Navbar() {
           {/* 1. Left Section: Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0">
             <div className="flex flex-col leading-none">
-              <span className={`${redColor} font-black text-xl sm:text-2xl tracking-tighter`}>ALARP</span>
+              <span className={`${redColor} font-black text-xl sm:text-2xl tracking-tighter`}>SFAIRP</span>
               <span className={`${navyColor} font-bold text-[8px] sm:text-[10px] tracking-[0.2em] uppercase`}>Safety Partners</span>
             </div>
           </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
               className={`hidden md:flex items-center gap-2 font-bold ${navyColor} hover:text-[#E30613] transition-colors`}
             >
               <Phone size={18} className="text-[#E30613]" fill="currentColor" />
-              <span>1300 761 935</span>
+              <span>0449 853 255</span>
             </Link>
 
             {/* Vertical Divider */}
@@ -105,7 +105,7 @@ export default function Navbar() {
             <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center">
               <Phone size={20} className="text-[#E30613]" />
             </div>
-            <span>1300 761 935</span>
+            <span>0449 853 255</span>
           </Link>
           
           <Link 

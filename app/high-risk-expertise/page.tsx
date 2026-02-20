@@ -56,9 +56,9 @@ export default function HighRiskExpertisePage() {
             <AnimatedSection delay={0.2}>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1000" 
+                  src="/image/audit.jpg" 
                   alt="Industrial Safety" 
-                  className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                  className="rounded-2xl shadow-2xl"
                 />
               </div>
             </AnimatedSection>
