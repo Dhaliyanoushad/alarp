@@ -7,54 +7,54 @@ export default function ContactPage() {
   return (
     <div className="pt-24 min-h-screen bg-[#F0F5FA]">
       <section className="py-24">
-        <div className="max-w-[1600px] mx-auto px-8">
-          <div className="flex flex-col lg:flex-row gap-24">
+        <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
             
             {/* Left Column: Info */}
             <AnimatedSection className="lg:w-1/3">
               <div>
-                <h1 className="text-slate-900 text-4xl md:text-6xl font-black mb-8 leading-tight">Connect with a <br /><span className="text-[#E30613]">Consultant</span></h1>
-                <p className="text-slate-600 text-base md:text-lg font-medium mb-12 leading-relaxed">
+                <h1 className="text-slate-900 text-3xl sm:text-4xl md:text-6xl font-black mb-6 md:mb-8 leading-tight">Connect with a <br /><span className="text-[#E30613]">Consultant</span></h1>
+                <p className="text-slate-600 text-sm sm:text-base md:text-lg font-medium mb-8 md:mb-12 leading-relaxed">
                   Reach out to discuss your specific safety challenges. Whether it's a gap analysis or full HSEMS implementation, we're ready to deploy.
                 </p>
 
                 <div className="space-y-8">
-                  <div className="flex gap-6 items-center">
-                    <div className="w-14 h-14 shrink-0 bg-white rounded-full flex items-center justify-center text-[#E30613] shadow-sm">
+                  <div className="flex gap-4 sm:gap-6 items-center">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center text-[#E30613] shadow-sm">
                       <Phone size={24} />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us 24/7</p>
-                      <p className="text-lg md:text-xl font-bold text-slate-900">0449 853 255</p>
+                      <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us 24/7</p>
+                      <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900">0449 853 255</p>
                     </div>
                   </div>
 
-                  <div className="flex gap-6 items-center">
-                    <div className="w-14 h-14 shrink-0 bg-white rounded-full flex items-center justify-center text-[#E30613] shadow-sm">
+                  <div className="flex gap-4 sm:gap-6 items-center">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center text-[#E30613] shadow-sm">
                       <Mail size={24} />
                     </div>
-                    <div>
-                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email Inquiry</p>
-                      <p className="text-lg md:text-xl font-bold text-slate-900">support@sfairpsafetypartners.com</p>
+                    <div className="min-w-0">
+                      <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email Inquiry</p>
+                      <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900 truncate sm:whitespace-normal">support@sfairpsafetypartners.com</p>
                     </div>
                   </div>
 
-                  <div className="flex gap-6 items-center">
-                    <div className="w-14 h-14 shrink-0 bg-white rounded-full flex items-center justify-center text-[#E30613] shadow-sm">
+                  <div className="flex gap-4 sm:gap-6 items-center">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 bg-white rounded-full flex items-center justify-center text-[#E30613] shadow-sm">
                       <MapPin size={24} />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Location</p>
-                      <p className="text-lg md:text-xl font-bold text-slate-900">Sydney / Melbourne / Brisbane</p>
+                      <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Locations</p>
+                      <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900">Sydney / Melbourne / Brisbane</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-16 pt-16 border-t border-slate-200">
+                <div className="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-slate-200">
                   <div className="flex gap-6">
                     <Link 
                       href="tel:1300761935" 
-                      className="bg-white border-2 border-slate-200 hover:border-[#E30613] p-6 rounded-2xl flex-1 text-center transition-all"
+                      className="bg-white border-2 border-slate-200 hover:border-[#E30613] p-4 sm:p-6 rounded-2xl flex-1 text-center transition-all"
                     >
                       <p className="font-bold text-slate-900">Book a Consultation</p>
                     </Link>
