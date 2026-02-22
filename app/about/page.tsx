@@ -14,11 +14,11 @@ export default function AboutPage() {
     <div className="pt-24 min-h-screen bg-white">
       {/* Header */}
       <AnimatedSection>
-        <section className="bg-slate-900 py-32 text-center relative overflow-hidden">
+        <section className="bg-slate-900 py-20 sm:py-32 text-center relative overflow-hidden">
           <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center"></div>
-          <div className="relative z-10 max-w-4xl mx-auto px-8">
-            <h1 className="text-white text-5xl md:text-7xl font-black mb-6">Our Story</h1>
-            <p className="text-slate-300 text-xl font-medium max-w-2xl mx-auto">
+          <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8">
+            <h1 className="text-white text-3xl xs:text-4xl md:text-7xl font-black mb-6">Our Story</h1>
+            <p className="text-slate-300 text-lg sm:text-xl font-medium max-w-2xl mx-auto">
               Practical safety consultancy built on technical expertise and a commitment to zero-harm operations.
             </p>
           </div>
@@ -27,12 +27,12 @@ export default function AboutPage() {
 
       {/* Mission & Story */}
       <AnimatedSection>
-        <section className="py-24">
-          <div className="max-w-[1600px] mx-auto px-8">
-            <div className="grid lg:grid-cols-2 gap-24 items-center">
+        <section className="py-16 sm:py-24">
+          <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-slate-900 mb-8">Defensible Compliance. <br /><span className="text-[#E30613]">No Compromises.</span></h2>
-                <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+                <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-slate-900 mb-8 leading-tight">Defensible Compliance. <br /><span className="text-[#E30613]">No Compromises.</span></h2>
+                <div className="space-y-4 sm:space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
                   <p>
                     SFAIRP SAFETY PARTNERS was founded to bridge the gap between complex safety regulations and practical onsite operations. We believe that safety shouldn't be a hurdle to productivity, but its backbone.
                   </p>
@@ -41,9 +41,9 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="bg-slate-50 p-12 rounded-2xl border border-slate-100">
-                <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Mission</h3>
-                <p className="text-slate-700 text-lg italic leading-relaxed">
+              <div className="bg-slate-50 p-6 sm:p-12 rounded-2xl border border-slate-100">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Our Mission</h3>
+                <p className="text-slate-700 text-base sm:text-lg italic leading-relaxed">
                   "To empower industrial organizations with the technical mastery and defensible systems required to protect their people and reputation in high-stakes environments."
                 </p>
               </div>
@@ -54,10 +54,10 @@ export default function AboutPage() {
 
       {/* Values */}
       <AnimatedSection>
-        <section className="bg-slate-50 py-24">
-          <div className="max-w-[1600px] mx-auto px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Core Values</h2>
+        <section className="bg-slate-50 py-16 sm:py-24">
+          <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Our Core Values</h2>
               <div className="h-1 w-20 bg-[#E30613] mx-auto"></div>
             </div>
             <div className="grid md:grid-cols-4 gap-8">

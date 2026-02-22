@@ -21,11 +21,11 @@ export default function ServicesGrid() {
   ];
 
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1600px] mx-auto px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Core Services</h2>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+    <section className="bg-white py-16 sm:py-24">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">Core Services</h2>
+          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
             Comprehensive HSE solutions tailored for high-risk industrial environments.
           </p>
         </div>
@@ -34,10 +34,10 @@ export default function ServicesGrid() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-slate-50 p-10 rounded-2xl border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="bg-slate-50 p-6 sm:p-10 rounded-2xl border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="mb-6">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">{service.title}</h3>
+              <div className="mb-4 sm:mb-6">{service.icon}</div>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">{service.title}</h3>
               <ul className="space-y-4 mb-8">
                 {service.items.map((item, i) => (
                   <li key={i} className="flex gap-3 text-slate-700 font-medium">

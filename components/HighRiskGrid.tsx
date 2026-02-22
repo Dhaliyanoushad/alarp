@@ -20,11 +20,11 @@ export default function HighRiskGrid() {
   ];
 
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1600px] mx-auto px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">High-Risk Expertise</h2>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+    <section className="bg-white py-16 sm:py-24">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">High-Risk Expertise</h2>
+          <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
             Authoritative and technical safety management for the most dangerous operational environments.
           </p>
         </div>
@@ -33,10 +33,10 @@ export default function HighRiskGrid() {
           {categories.map((cat, index) => (
             <div 
               key={index} 
-              className="group bg-slate-50 p-10 rounded-2xl border border-slate-100 hover:bg-slate-900 transition-all duration500"
+              className="group bg-slate-50 p-6 sm:p-10 rounded-2xl border border-slate-100 hover:bg-slate-900 transition-all duration-500"
             >
-              <div className="mb-6 group-hover:scale-110 transition-transform duration-500">{cat.icon}</div>
-              <h3 className="text-2xl font-bold text-slate-900 group-hover:text-white mb-6 transition-colors">{cat.title}</h3>
+              <div className="mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-500">{cat.icon}</div>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-white mb-4 sm:mb-6 transition-colors">{cat.title}</h3>
               <ul className="space-y-4">
                 {cat.items.map((item, i) => (
                   <li key={i} className="flex gap-3 text-slate-600 group-hover:text-slate-300 font-medium transition-colors">

@@ -60,7 +60,7 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-white mb-8 uppercase tracking-[0.2em] text-xs">Contact Us</h4>
           <p className="text-sm font-bold text-slate-400 mb-2">Technical Helpline</p>
-          <p className="text-2xl md:text-xl lg:text-2xl font-black text-[#E30613] mb-6 transition-transform hover:scale-105 cursor-pointer w-fit underline decoration-2 underline-offset-8">0449 853 255</p>
+          <a href="tel:0449853255" className="text-2xl md:text-xl lg:text-2xl font-black text-[#E30613] mb-6 transition-transform hover:scale-105 cursor-pointer w-fit underline decoration-2 underline-offset-8 block">0449 853 255</a>
           <Link href="/contact" onClick={() => handleLinkClick('/contact')} className="bg-[#E30613] text-white px-8 md:px-6 lg:px-8 py-4 md:py-3 lg:py-4 rounded-full font-bold text-sm md:text-xs lg:text-sm hover:bg-white hover:text-slate-900 transition-all text-center block md:inline-block lg:block shadow-lg shadow-red-600/10">
              Book a Consultation
           </Link>

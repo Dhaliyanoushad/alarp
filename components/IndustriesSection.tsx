@@ -9,8 +9,8 @@ export default function IndustriesSection() {
   ];
 
   return (
-    <section className="bg-slate-950 py-24">
-      <div className="max-w-[1600px] mx-auto px-8">
+    <section className="bg-slate-950 py-16 sm:py-24">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
         <div className="text-center mb-16">
           <h2 className="text-white text-sm font-bold uppercase tracking-[0.4em] mb-4">Industries We Protect</h2>
           <div className="h-1 w-20 bg-[#E30613] mx-auto"></div>

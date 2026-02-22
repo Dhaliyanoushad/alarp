@@ -5,16 +5,16 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function ContactPage() {
   return (
-    <div className="pt-24 min-h-screen bg-[#F0F5FA]">
-      <section className="py-24">
-        <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
+    <div className="pt-20 sm:pt-24 min-h-screen bg-[#F0F5FA]">
+      <section className="py-12 sm:py-24">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
             
             {/* Left Column: Info */}
             <AnimatedSection className="lg:w-1/3">
               <div>
-                <h1 className="text-slate-900 text-3xl sm:text-4xl md:text-6xl font-black mb-6 md:mb-8 leading-tight">Connect with a <br /><span className="text-[#E30613]">Consultant</span></h1>
-                <p className="text-slate-600 text-sm sm:text-base md:text-lg font-medium mb-8 md:mb-12 leading-relaxed">
+                <h1 className="text-slate-900 text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-black mb-4 md:mb-8 leading-tight">Connect with a <br /><span className="text-[#E30613]">Consultant</span></h1>
+                <p className="text-slate-600 text-sm md:text-lg font-medium mb-8 md:mb-12 leading-relaxed">
                   Reach out to discuss your specific safety challenges. Whether it's a gap analysis or full HSEMS implementation, we're ready to deploy.
                 </p>
 
@@ -24,8 +24,8 @@ export default function ContactPage() {
                       <Phone size={24} />
                     </div>
                     <div>
-                      <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us 24/7</p>
-                      <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900">0449 853 255</p>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Call Us 24/7</p>
+                      <a href="tel:0449853255" className="text-[13px] xs:text-base sm:text-lg md:text-xl font-bold text-slate-900 truncate sm:whitespace-normal block hover:text-[#E30613] transition-colors">0449 853 255</a>
                     </div>
                   </div>
 
@@ -34,8 +34,8 @@ export default function ContactPage() {
                       <Mail size={24} />
                     </div>
                     <div className="min-w-0">
-                      <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Email Inquiry</p>
-                      <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900 truncate sm:whitespace-normal">support@sfairpsafetypartners.com</p>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Email Inquiry</p>
+                      <a href="mailto:support@sfairpsafetypartners.com" className="text-[13px] xs:text-base sm:text-lg md:text-xl font-bold text-slate-900 sm:whitespace-normal block hover:text-[#E30613] transition-colors">support@sfairpsafetypartners.com</a>
                     </div>
                   </div>
 
@@ -44,20 +44,20 @@ export default function ContactPage() {
                       <MapPin size={24} />
                     </div>
                     <div>
-                      <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Locations</p>
-                      <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900">Sydney / Melbourne / Brisbane</p>
+                      <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Locations</p>
+                      <p className="text-[13px] xs:text-base sm:text-lg md:text-xl font-bold text-slate-900 truncate sm:whitespace-normal">Sydney / Melbourne / Brisbane</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-12 md:mt-16 pt-12 md:pt-16 border-t border-slate-200">
                   <div className="flex gap-6">
-                    <Link 
-                      href="tel:1300761935" 
+                    <a 
+                      href="tel:0449853255" 
                       className="bg-white border-2 border-slate-200 hover:border-[#E30613] p-4 sm:p-6 rounded-2xl flex-1 text-center transition-all"
                     >
                       <p className="font-bold text-slate-900">Book a Consultation</p>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -75,8 +75,8 @@ export default function ContactPage() {
       {/* Trust Quote */}
       <AnimatedSection>
         <section className="bg-white py-20 text-center">
-          <div className="max-w-2xl mx-auto px-8">
-            <p className="text-slate-800 text-2xl font-bold italic mb-6">
+          <div className="max-w-2xl mx-auto px-6">
+            <p className="text-slate-800 text-lg sm:text-2xl font-bold italic mb-6 leading-snug">
               "Your reputation is built on the safety of your people. We help you protect both."
             </p>
             <div className="h-1 w-12 bg-[#E30613] mx-auto"></div>

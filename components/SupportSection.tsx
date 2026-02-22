@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function SupportSection() {
   return (
-    <section className="bg-[#F0F5FA] py-24">
-      <div className="max-w-[1600px] mx-auto px-8">
+    <section className="bg-[#F0F5FA] py-16 sm:py-24">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
           {/* Left: Image with border and shadow */}
@@ -19,14 +19,14 @@ export default function SupportSection() {
 
           {/* Right: Content */}
           <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#002D4B] leading-tight mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#002D4B] leading-[1.15] mb-8">
               How SFAIRP <span className="relative inline-block">
                 supports your
                 <svg className="absolute -bottom-2 left-0 w-full h-2" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 25 0, 50 5 T 100 5" stroke="#E30613" strokeWidth="3" fill="transparent" />
                 </svg>
               </span>
-              <br />
+              <br className="hidden sm:block" />
               <span className="relative inline-block mt-2">
                 business
                 <svg className="absolute -bottom-2 left-0 w-full h-2" viewBox="0 0 100 10" preserveAspectRatio="none">
@@ -35,7 +35,7 @@ export default function SupportSection() {
               </span>
             </h2>
 
-            <div className="space-y-6 text-[#1d2d3d] text-lg leading-relaxed mb-10">
+            <div className="space-y-4 text-[#1d2d3d] text-base sm:text-lg leading-relaxed mb-10">
               <p className="font-semibold">
                 For a technical baseline of "As Low As Reasonably Practicable", you have unlimited 24/7 access to senior safety consultants for your most critical onsite decisions.
               </p>
@@ -59,19 +59,19 @@ export default function SupportSection() {
                ))}
             </div>
 
-            <div className="flex flex-wrap gap-5">
-              <Link 
-                href="tel:1300761935"
-                className="bg-[#3D5ADA] hover:bg-[#2F47B8] text-white px-8 py-3.5 rounded-full font-bold text-center flex flex-col justify-center min-w-[220px] transition-colors"
+            <div className="flex flex-col xs:flex-row flex-wrap gap-4 xs:gap-5">
+              <a 
+                href="tel:0449853255"
+                className="bg-[#3D5ADA] hover:bg-[#2F47B8] text-white px-6 py-3 rounded-full font-bold text-center flex flex-col justify-center min-w-[180px] xs:min-w-[220px] transition-colors"
               >
-                <span className="text-xs opacity-90 mb-0.5 uppercase tracking-wider">Call now</span>
-                <span className="text-lg leading-none">0449 853 255</span>
-              </Link>
+                <span className="text-[10px] opacity-90 mb-0.5 uppercase tracking-wider">Call now</span>
+                <span className="text-base xs:text-lg leading-none">0449 853 255</span>
+              </a>
               
               <button 
-                className="border-[1.5px] border-[#3D5ADA] text-[#3D5ADA] hover:bg-[#3D5ADA]/5 px-8 py-3.5 rounded-full font-bold text-lg min-w-[220px] transition-all flex items-center justify-center"
+                className="border-[1.5px] border-[#3D5ADA] text-[#3D5ADA] hover:bg-[#3D5ADA]/5 px-6 py-3.5 rounded-full font-bold text-base xs:text-lg min-w-[180px] xs:min-w-[220px] transition-all flex items-center justify-center text-center"
               >
-                Find the right help for you
+                Find the right help
               </button>
             </div>
           </div>

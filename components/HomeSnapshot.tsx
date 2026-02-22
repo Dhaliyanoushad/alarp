@@ -9,8 +9,8 @@ export default function HomeSnapshot() {
   ];
 
   return (
-    <section className="bg-slate-50 py-24">
-      <div className="max-w-[1600px] mx-auto px-8">
+    <section className="bg-slate-50 py-16 sm:py-24">
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
           {/* Left: Industrial Image */}
@@ -26,8 +26,8 @@ export default function HomeSnapshot() {
 
           {/* Right: Content */}
           <div className="lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">
-              Reliable Safety Solutions <br />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-[1.15] mb-8">
+              Reliable Safety Solutions <br className="hidden sm:block" />
               <span className="relative inline-block">
                 supports your
                 <svg className="absolute -bottom-2 left-0 w-full h-2" viewBox="0 0 100 10" preserveAspectRatio="none">
@@ -43,7 +43,7 @@ export default function HomeSnapshot() {
               </span>
             </h2>
 
-            <div className="space-y-6 text-slate-700 text-lg leading-relaxed mb-10">
+            <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed mb-10">
               <p className="font-semibold text-slate-900">
                 SFAIRP SAFETY PARTNERS is a professional safety consultancy delivering practical, compliant, and high-impact HSE solutions.
               </p>
@@ -65,7 +65,7 @@ export default function HomeSnapshot() {
             <div className="flex flex-wrap gap-5">
               <Link 
                 href="/contact"
-                className="bg-[#E30613] hover:bg-[#c40510] text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg"
+                className="bg-[#E30613] hover:bg-[#c40510] text-white px-8 py-3.5 sm:px-10 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg"
               >
                 Request a Safety Audit
               </Link>

@@ -27,8 +27,8 @@ export default function Navbar() {
           {/* 1. Left Section: Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0">
             <div className="flex flex-col leading-none">
-              <span className={`${redColor} font-black text-xl sm:text-2xl tracking-tighter`}>SFAIRP</span>
-              <span className={`${navyColor} font-bold text-[8px] sm:text-[10px] tracking-[0.2em] uppercase`}>Safety Partners</span>
+              <span className={`${redColor} font-black text-lg xs:text-xl sm:text-2xl tracking-tighter`}>SFAIRP</span>
+              <span className={`${navyColor} font-bold text-[7px] xs:text-[8px] sm:text-[10px] tracking-[0.2em] uppercase`}>Safety Partners</span>
             </div>
           </Link>
 
@@ -47,13 +47,13 @@ export default function Navbar() {
 
           {/* 3. Right Section: Actions */}
           <div className="flex items-center gap-2 sm:gap-4 lg:gap-6">
-            <Link 
-              href="tel:1300761935" 
+            <a 
+              href="tel:0449853255" 
               className={`hidden md:flex items-center gap-2 font-bold ${navyColor} hover:text-[#E30613] transition-colors`}
             >
               <Phone size={18} className="text-[#E30613]" fill="currentColor" />
               <span>0449 853 255</span>
-            </Link>
+            </a>
 
             {/* Vertical Divider */}
             <div className="h-10 w-[1px] bg-gray-200 hidden md:block" />
@@ -61,7 +61,7 @@ export default function Navbar() {
             {/* Boxed Menu Button */}
             <Link 
               href="/contact"
-              className={`flex items-center gap-2 border-2 border-slate-900 px-3 py-2 sm:px-6 sm:py-2.5 rounded-full font-bold ${navyColor} hover:bg-slate-900 hover:text-white transition-all text-xs sm:text-sm`}
+              className={`flex items-center gap-1 sm:gap-2 border-2 border-slate-900 px-2.5 py-1.5 xs:px-3 xs:py-2 sm:px-6 sm:py-2.5 rounded-full font-bold ${navyColor} hover:bg-slate-900 hover:text-white transition-all text-[10px] xs:text-xs sm:text-sm`}
             >
               <span>Request Audit</span>
             </Link>
@@ -97,8 +97,8 @@ export default function Navbar() {
           
           <div className="w-full max-w-xs h-[1px] bg-gray-100 my-1" />
           
-          <Link 
-            href="tel:1300761935" 
+          <a 
+            href="tel:0449853255" 
             className={`flex items-center gap-3 text-xl font-bold ${navyColor}`}
             onClick={() => setIsOpen(false)}
           >
@@ -106,7 +106,7 @@ export default function Navbar() {
               <Phone size={20} className="text-[#E30613]" />
             </div>
             <span>0449 853 255</span>
-          </Link>
+          </a>
           
           <Link 
             href="/contact"
