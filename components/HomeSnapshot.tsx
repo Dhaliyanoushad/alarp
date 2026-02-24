@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HomeSnapshot() {
   const industries = [
@@ -16,9 +17,11 @@ export default function HomeSnapshot() {
           {/* Left: Industrial Image */}
           <div className="lg:w-1/2 relative group">
             <div className="relative bg-white p-3 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-transform duration-500 group-hover:scale-[1.01]">
-              <img 
+              <Image 
                 src="https://i.pinimg.com/736x/84/66/57/8466576e9f04f0a5a3c451bd70fe6f8c.jpg" 
                 alt="SFAIRP SAFETY PARTNERS Onsite"
+                width={800}
+                height={600}
                 className="w-full h-auto rounded-sm"
               />
             </div>

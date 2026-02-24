@@ -1,13 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative h-[85vh] sm:h-[90vh] flex items-center bg-white overflow-hidden pt-20 sm:pt-24">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-[url('/image/safety.png')] bg-cover bg-center" 
-          aria-hidden="true"
+        <Image
+          src="/image/safety.png"
+          alt="Industrial Safety Site"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>

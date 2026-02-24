@@ -2,6 +2,7 @@ import HighRiskGrid from '@/components/HighRiskGrid';
 import CTASection from '@/components/CTASection';
 import { ShieldAlert, Zap, Layers, Beaker } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
+import Image from 'next/image';
 
 export default function HighRiskExpertisePage() {
   const focusAreas = [
@@ -15,7 +16,15 @@ export default function HighRiskExpertisePage() {
       {/* Header */}
       <AnimatedSection>
         <section className="bg-slate-900 py-32 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center"></div>
+          <div className="absolute inset-0 opacity-10">
+            <Image
+              src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=2070"
+              alt="Industrial Background"
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+          </div>
           <div className="relative z-10 max-w-4xl mx-auto px-8">
             <div className="inline-flex items-center gap-2 bg-[#E30613] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
               <ShieldAlert size={14} /> Critical Systems
@@ -55,10 +64,12 @@ export default function HighRiskExpertisePage() {
             
             <AnimatedSection delay={0.2}>
               <div className="relative">
-                <img 
+                <Image 
                   src="/image/audit.jpg" 
                   alt="Industrial Safety" 
-                  className="rounded-2xl shadow-2xl"
+                  width={800}
+                  height={600}
+                  className="rounded-2xl shadow-2xl w-full h-auto"
                 />
               </div>
             </AnimatedSection>

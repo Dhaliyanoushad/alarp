@@ -27,13 +27,13 @@ export default function Footer() {
           <p className="text-sm text-slate-400 leading-relaxed font-medium mb-8">
             Providing expert WHS and risk-mitigation advice 24/7. Part of the Global Safety Partners Group, dedicated to protecting high-stakes operations.
           </p>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
              {['twitter', 'linkedin', 'facebook'].map(social => (
                 <div key={social} className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white/40 hover:bg-[#E30613] hover:text-white transition-all cursor-pointer">
                    <span className="text-[10px] uppercase font-bold tracking-widest">{social[0]}</span>
                 </div>
               ))}
-          </div>
+          </div> */}
         </div>
         
         <div>
