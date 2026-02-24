@@ -18,8 +18,16 @@
 @theme {
   --color-navy: #002D4B;
   --color-red: #E30613;
+  --color-red-hover: #c40510;
+  --color-slate-overlay: rgba(15, 23, 42, 0.5);
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-roboto), ui-serif, Georgia;
+
   --breakpoint-xs: 375px;
   --breakpoint-xxs: 340px;
+
+  --container-max: 1600px;
 }
 
 .peninsula-underline {

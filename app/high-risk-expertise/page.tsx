@@ -26,7 +26,7 @@ export default function HighRiskExpertisePage() {
             />
           </div>
           <div className="relative z-10 max-w-4xl mx-auto px-8">
-            <div className="inline-flex items-center gap-2 bg-[#E30613] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 bg-red text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
               <ShieldAlert size={14} /> Critical Systems
             </div>
             <h1 className="text-white text-5xl md:text-7xl font-black mb-6">High-Risk Expertise</h1>
@@ -47,14 +47,14 @@ export default function HighRiskExpertisePage() {
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <AnimatedSection>
               <div>
-                <h2 className="text-4xl font-bold text-slate-900 mb-8 leading-tight">Mastering <span className="text-[#E30613]">Major Hazard</span> <br /> Facility Standards</h2>
+                <h2 className="text-4xl font-bold text-slate-900 mb-8 leading-tight">Mastering <span className="text-red">Major Hazard</span> <br /> Facility Standards</h2>
                 <p className="text-slate-700 text-lg leading-relaxed mb-8">
                   Our consultants bring deep technical knowledge from the most demanding sectors, including mining, heavy construction, and motorized vehicle logistics. We understand the physics of high-risk work, not just the paperwork.
                 </p>
                 <div className="space-y-4">
                   {["Rigorous Safety Case Development", "Mechanical & Hydraulic Risk Control", "Heavy Lift Supervisory Frameworks"].map(item => (
                     <div key={item} className="flex gap-4 items-center font-bold text-slate-900">
-                      <div className="w-2 h-2 bg-[#E30613] rounded-full"></div>
+                      <div className="w-2 h-2 bg-red rounded-full"></div>
                       {item}
                     </div>
                   ))}

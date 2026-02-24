@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-[85vh] sm:h-[90vh] flex items-center bg-white overflow-hidden pt-20 sm:pt-24">
+    <section className="relative h-[85vh] sm:h-[90vh] flex items-center bg-white overflow-hidden pt-20 sm:pt-24 font-sans">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <Image
@@ -14,7 +14,7 @@ export default function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-slate-overlay" />
       </div>
 
       {/* Hero Content */}

@@ -1,6 +1,7 @@
 import CTASection from '@/components/CTASection';
 import IndustriesSection from '@/components/IndustriesSection';
 import AnimatedSection from '@/components/AnimatedSection';
+import NextImage from 'next/image';
 
 export default function AboutPage() {
   const values = [
@@ -11,11 +12,20 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="pt-24 min-h-screen bg-white">
+    <div className="pt-24 min-h-screen bg-white font-sans">
       {/* Header */}
       <AnimatedSection>
         <section className="bg-slate-900 py-20 sm:py-32 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center"></div>
+          <div className="absolute inset-0 opacity-20">
+            <NextImage
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2070"
+              alt="Industrial Background"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority
+            />
+          </div>
           <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8">
             <h1 className="text-white text-3xl xs:text-4xl md:text-7xl font-black mb-6">Our Story</h1>
             <p className="text-slate-300 text-lg sm:text-xl font-medium max-w-2xl mx-auto">
@@ -31,7 +41,7 @@ export default function AboutPage() {
           <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div>
-                <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-slate-900 mb-8 leading-tight">Defensible Compliance. <br /><span className="text-[#E30613]">No Compromises.</span></h2>
+                <h2 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-slate-900 mb-8 leading-tight">Defensible Compliance. <br /><span className="text-red">No Compromises.</span></h2>
                 <div className="space-y-4 sm:space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
                   <p>
                     SFAIRP SAFETY PARTNERS was founded to bridge the gap between complex safety regulations and practical onsite operations. We believe that safety shouldn't be a hurdle to productivity, but its backbone.
@@ -58,12 +68,12 @@ export default function AboutPage() {
           <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
             <div className="text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Our Core Values</h2>
-              <div className="h-1 w-20 bg-[#E30613] mx-auto"></div>
+              <div className="h-1 w-20 bg-red mx-auto"></div>
             </div>
             <div className="grid md:grid-cols-4 gap-8">
               {values.map((v, i) => (
                 <div key={i} className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 text-center">
-                  <h4 className="text-[#E30613] font-bold text-lg mb-4">{v.title}</h4>
+                  <h4 className="text-red font-bold text-lg mb-4">{v.title}</h4>
                   <p className="text-slate-600 font-medium text-sm leading-relaxed">{v.desc}</p>
                 </div>
               ))}

@@ -109,7 +109,7 @@ function ContactForm() {
   }, [formData]);
 
   return (
-    <div className="bg-white p-4 xxs:p-6 md:p-12 rounded-2xl shadow-2xl border border-slate-100">
+    <div className="bg-white p-4 xxs:p-6 md:p-12 rounded-2xl shadow-2xl border border-slate-100 font-sans">
       <form onSubmit={handleSubmit} className="space-y-4 xxs:space-y-6">
         {/* Row 1: Name & Company */}
         <div className="grid md:grid-cols-2 gap-4 xxs:gap-6">
@@ -123,7 +123,7 @@ function ContactForm() {
               id="name"
               placeholder="John Doe"
               value={formData.name}
-              className="w-full px-3 py-3 xxs:px-5 xxs:py-4 rounded-lg bg-slate-50 border border-slate-200 focus:border-[#E30613] focus:ring-1 focus:ring-[#E30613] outline-none transition-all text-sm xxs:text-base"
+              className="w-full px-3 py-3 xxs:px-5 xxs:py-4 rounded-lg bg-slate-50 border border-slate-200 focus:border-red focus:ring-1 focus:ring-red outline-none transition-all text-sm xxs:text-base"
               onChange={handleChange}
             />
           </div>
@@ -256,7 +256,7 @@ function ContactForm() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#E30613] hover:bg-[#c40510] text-white font-bold h-12 py-3 xxs:h-auto xxs:py-4 md:py-5 rounded-lg text-xs xs:text-base md:text-lg transition-all shadow-xl shadow-red-600/20 uppercase tracking-widest disabled:opacity-70 disabled:cursor-not-allowed"
+          className="w-full bg-red hover:bg-red-hover text-white font-bold h-12 py-3 xxs:h-auto xxs:py-4 md:py-5 rounded-lg text-xs xs:text-base md:text-lg transition-all shadow-xl shadow-red/20 uppercase tracking-widest disabled:opacity-70 disabled:cursor-not-allowed"
         >
           {loading ? "Sending..." : "Send Inquiry"}
         </button>

@@ -5,23 +5,23 @@ export default function ServicesGrid() {
   const services = [
     {
       title: "Systems & Compliance",
-      icon: <ShieldCheck className="w-10 h-10 text-[#E30613]" />,
+      icon: <ShieldCheck className="w-10 h-10 text-red" />,
       items: ["HSEMS Implementation", "Legal Compliance", "Procedure Reviews"]
     },
     {
       title: "Onsite Operations",
-      icon: <HardHat className="w-10 h-10 text-[#E30613]" />,
+      icon: <HardHat className="w-10 h-10 text-red" />,
       items: ["Workplace Inspections", "Contractor Management", "Incident Investigation"]
     },
     {
       title: "Documentation & Training",
-      icon: <FileText className="w-10 h-10 text-[#E30613]" />,
+      icon: <FileText className="w-10 h-10 text-red" />,
       items: ["Staff Inductions & Training", "SWI Development", "Toolbox Talks"]
     }
   ];
 
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 font-sans">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">Core Services</h2>
@@ -41,14 +41,14 @@ export default function ServicesGrid() {
               <ul className="space-y-4 mb-8">
                 {service.items.map((item, i) => (
                   <li key={i} className="flex gap-3 text-slate-700 font-medium">
-                    <span className="text-[#E30613]">•</span>
+                    <span className="text-red">•</span>
                     {item}
                   </li>
                 ))}
               </ul>
               <Link 
                 href="/services" 
-                className="inline-block text-[#E30613] font-bold text-sm uppercase tracking-wider hover:underline"
+                className="inline-block text-red font-bold text-sm uppercase tracking-wider hover:underline"
               >
                 Learn More →
               </Link>

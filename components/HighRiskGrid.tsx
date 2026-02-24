@@ -4,23 +4,23 @@ export default function HighRiskGrid() {
   const categories = [
     {
       title: "Technical Work Environments",
-      icon: <Mountain className="w-8 h-8 text-[#E30613]" />,
+      icon: <Mountain className="w-8 h-8 text-red" />,
       items: ["Working at Heights & Confined Spaces", "Working Above Water", "Major Hazard Facilities"]
     },
     {
       title: "Industrial Logistics & Equipment",
-      icon: <Construction className="w-8 h-8 text-[#E30613]" />,
+      icon: <Construction className="w-8 h-8 text-red" />,
       items: ["Motorised Vehicle Operations (Cranes, Forklifts, Trucks)", "Lifting Operations", "Warehousing Safety Standards"]
     },
     {
       title: "Critical Control",
-      icon: <Lock className="w-8 h-8 text-[#E30613]" />,
+      icon: <Lock className="w-8 h-8 text-red" />,
       items: ["Permit to Work Systems", "Critical Risk Inventories", "Safety Case Development"]
     }
   ];
 
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 font-sans">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">High-Risk Expertise</h2>
@@ -40,7 +40,7 @@ export default function HighRiskGrid() {
               <ul className="space-y-4">
                 {cat.items.map((item, i) => (
                   <li key={i} className="flex gap-3 text-slate-600 group-hover:text-slate-300 font-medium transition-colors">
-                    <span className="text-[#E30613] font-bold">•</span>
+                    <span className="text-red font-bold">•</span>
                     {item}
                   </li>
                 ))}

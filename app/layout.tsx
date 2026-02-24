@@ -17,9 +17,30 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "SFAIRP SAFETY PARTNERS | Industrial Safety Consultancy",
-  description: "High-trust safety audits, systems, and training for construction, warehousing, and major hazard facilities. Establising authoritative safety cultures.",
+  metadataBase: new URL('https://www.sfairpsafetypartners.com'),
+  title: {
+    default: "SFAIRP SAFETY PARTNERS | Industrial Safety Consultancy",
+    template: "%s | SFAIRP SAFETY PARTNERS"
+  },
+  description: "High-trust safety audits, systems, and training for construction, warehousing, and major hazard facilities. Establishing authoritative safety cultures.",
   keywords: ["safety consultancy", "HSE management", "safety audit", "industrial safety", "SFAIRP", "workplace safety"],
+  openGraph: {
+    type: "website",
+    locale: "en_AU",
+    url: "https://www.sfairpsafetypartners.com",
+    siteName: "SFAIRP SAFETY PARTNERS",
+    title: "SFAIRP SAFETY PARTNERS | Industrial Safety Consultancy",
+    description: "Expert WHS and risk-mitigation advice for high-stakes operations.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SFAIRP SAFETY PARTNERS | Industrial Safety Consultancy",
+    description: "Expert WHS and risk-mitigation advice for high-stakes operations.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
@@ -27,15 +48,38 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SFAIRP SAFETY PARTNERS",
+    "url": "https://www.sfairpsafetypartners.com",
+    "description": "Professional HSE consultancy delivering compliance, risk management, and high-risk safety solutions.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+61 449 853 255",
+      "contactType": "technical support"
+    }
+  };
+
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
-        className={`${inter.variable} ${roboto.variable} antialiased flex flex-col min-h-screen`}
+        className={`${inter.variable} ${roboto.variable} font-sans antialiased flex flex-col min-h-screen`}
       >
         <Navbar />
-        <div className="flex-grow">
+        <main className="flex-grow">
           {children}
-        </div>
+        </main>
         <Footer />
       </body>
     </html>

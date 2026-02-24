@@ -4,12 +4,13 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Phone, Menu, X } from 'lucide-react';
+import ScrollLink from './ScrollLink';
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const navyColor = "text-[#002D4B]";
-  const redColor = "text-[#E30613]";
+  const navyColor = "text-navy";
+  const redColor = "text-red";
 
   const navLinks = [
     { label: "Home", href: "/" },
@@ -84,16 +85,18 @@ export default function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center justify-start h-full gap-5 px-8 pt-36 pb-12 overflow-y-auto w-full">
-          {navLinks.map((link) => (
-            <Link 
-              key={link.label}
-              href={link.href}
-              className={`text-2xl font-bold ${pathname === link.href ? 'text-[#E30613]' : navyColor} hover:text-[#E30613] transition-colors`}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+            {navLinks.map((link) => (
+              <ScrollLink
+                key={link.href}
+                href={link.href}
+                className={`text-sm font-bold uppercase tracking-widest transition-colors ${
+                  pathname === link.href ? redColor : navyColor
+                } hover:text-red`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </ScrollLink>
+            ))}
           
           <div className="w-full max-w-xs h-[1px] bg-gray-100 my-1" />
           

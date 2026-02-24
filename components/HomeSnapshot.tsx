@@ -10,7 +10,7 @@ export default function HomeSnapshot() {
   ];
 
   return (
-    <section className="bg-slate-50 py-16 sm:py-24">
+    <section className="bg-slate-50 py-16 sm:py-24 font-sans">
       <div className="max-w-[1600px] mx-auto px-6 sm:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
@@ -23,6 +23,7 @@ export default function HomeSnapshot() {
                 width={800}
                 height={600}
                 className="w-full h-auto rounded-sm"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -59,7 +60,7 @@ export default function HomeSnapshot() {
             <div className="grid sm:grid-cols-2 gap-4 mb-12">
                {industries.map(industry => (
                  <div key={industry} className="flex gap-3 items-center font-bold text-slate-800">
-                   <div className="w-5 h-5 bg-[#E30613] rounded-full flex items-center justify-center text-white text-[10px] shrink-0">✓</div>
+                   <div className="w-5 h-5 bg-red rounded-full flex items-center justify-center text-white text-[10px] shrink-0">✓</div>
                    <span className="text-sm leading-tight">{industry}</span>
                  </div>
                ))}
@@ -68,7 +69,7 @@ export default function HomeSnapshot() {
             <div className="flex flex-wrap gap-5">
               <Link 
                 href="/contact"
-                className="bg-[#E30613] hover:bg-[#c40510] text-white px-8 py-3.5 sm:px-10 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg"
+                className="bg-red hover:bg-red-hover text-white px-8 py-3.5 sm:px-10 sm:py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg"
               >
                 Request a Safety Audit
               </Link>

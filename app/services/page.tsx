@@ -7,7 +7,7 @@ export default function ServicesPage() {
   const deepServices = [
     {
       category: "Systems & Compliance",
-      icon: <ShieldCheck className="w-12 h-12 text-[#E30613]" />,
+      icon: <ShieldCheck className="w-12 h-12 text-red" />,
       features: [
         { title: "HSEMS Implementation", desc: "Bespoke Health, Safety, and Environmental Management Systems tailored to your risk profile." },
         { title: "Legal Compliance", desc: "Ensuring adherence to state-specific statutory requirements and national standards." },
@@ -16,7 +16,7 @@ export default function ServicesPage() {
     },
     {
       category: "Onsite Operations",
-      icon: <HardHat className="w-12 h-12 text-[#E30613]" />,
+      icon: <HardHat className="w-12 h-12 text-red" />,
       features: [
         { title: "Workplace Inspections", desc: "Detailed onsite physical audits to identify latent hazards and immediate risks." },
         { title: "Contractor Management", desc: "Verification systems for third-party compliance and onsite safety inductions." },
@@ -25,7 +25,7 @@ export default function ServicesPage() {
     },
     {
       category: "Documentation & Training",
-      icon: <FileText className="w-12 h-12 text-[#E30613]" />,
+      icon: <FileText className="w-12 h-12 text-red" />,
       features: [
         { title: "Staff Inductions & Training", desc: "Customized training modules for workers in high-risk environments." },
         { title: "SWI Development", desc: "Safe Work Instructions that are easy to follow and technically accurate." },
@@ -35,7 +35,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="pt-24 min-h-screen bg-slate-50">
+    <div className="pt-24 min-h-screen bg-slate-50 font-sans">
       {/* Header */}
       <AnimatedSection>
         <section className="bg-white py-32 border-b border-slate-100">
@@ -58,13 +58,13 @@ export default function ServicesPage() {
                   <div className="lg:w-1/3">
                     <div className="mb-6">{cat.icon}</div>
                     <h2 className="text-4xl font-bold text-slate-900 mb-6">{cat.category}</h2>
-                    <div className="h-1.5 w-16 bg-[#E30613]"></div>
+                    <div className="h-1.5 w-16 bg-red"></div>
                   </div>
                   <div className="lg:w-2/3 grid sm:grid-cols-1 md:grid-cols-2 gap-8">
                     {cat.features.map((f, i) => (
                       <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
                         <div className="flex gap-4 items-start mb-4">
-                          <CheckCircle2 className="w-6 h-6 text-[#E30613] shrink-0 mt-1" />
+                          <CheckCircle2 className="w-6 h-6 text-red shrink-0 mt-1" />
                           <h4 className="text-xl font-black text-slate-900">{f.title}</h4>
                         </div>
                         <p className="text-slate-600 font-medium leading-relaxed">{f.desc}</p>
